@@ -42,7 +42,7 @@ public class Racetrack
 	{
 		if(lane < 0 || lane > 7)
 		{
-			System.out.println("Invalid lane");
+			System.out.println(Main.getRB().getString("error.invalid.lane"));
 			return;
 		}
 		if(lanes[lane] == null)
@@ -51,7 +51,7 @@ public class Racetrack
 		}
 		else
 		{
-			System.out.println("Lane occupied");
+			System.out.println(Main.getRB().getString("error.lane.occupied"));
 			return;
 		}
 	}
